@@ -43,6 +43,8 @@ if __name__ == '__main__':
     helpHandler = CommandHandler("help", help)
     application.add_handler(helpHandler)
     application.add_handler(startHandler)
+    regHandler = CommandHandler("regUser", registrationUser)
+    application.add_handler(regHandler)
     print("Bot started")
     application.run_polling()
 
